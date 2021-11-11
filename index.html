@@ -11,8 +11,169 @@
     <meta name="keywords" content="Brayan">
   <title>Hola</title>
 </head>
-<body>
+<body id="body">
+  <!-- LOGIN -->
+  <div id="acceso">
+    <div id="login">
+      <label for="" id="formTittle" for:password="">CONTRASEÑA</label>
+      <div class="groupPassword">
+        <input type="text" id="password" class="input" name="password" required="required" placeholder="password" autocomplete="off" autofocus>
+        <div id="status">
+          Contraseña incorrecta
+          <img src="img/symbol/error.svg" alt="symbol error">
+        </div>
+      </div>
+      <button class="btn" id="sendLogin">Enviar</button>
+    </div>
+  </div>
+  <!-- PAGE -->
+  
+  <main id="main">
+    <section class="sectionAbsolute" id="sectionFirstMessage">
+      <div id="firstMessage">
+        <div class="containerClose">
+          <button class=" btn btnClose" id="btnCloseFirstMessage">
+            <img class="symbol" src="img/symbol/close.svg"></img>
+          </button>
+        </div>
+        <div class="containerFlex">
+          <tittle>TITULO :v</tittle>
+          <p>En proceso jaja</p>
+        </div>
+      </div>
+    </section>
+    <section class="sectionAbsolute" id="containerPropuesta">
+      <div class="containerFlex" id="propuesta">
+        <div class="containerFlex">
+          <tittle>TE GUSTARIA TENER UNA PRIMER CITA?</tittle>
+        </div>
+        <div id="propuestaSeparation"></div>
+        <div id="respuestaFinal">
+          <div class="tpZone">
+            <button class="btn" id="btnSiPropuestaFinal">SI</button>
+          </div>
+          <div class="tpZone" id="tpSection">
+            <button class="btn">NO</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <h1 id="tittleP">
+      FELICES 26 MESES JUNTOS
+      <!-- HOLA -->
+    </h1>
+    <article id="nosotros">
+      <div class="imgTittle" id="bgNosotros">
+        <div id="imgTittleNosotros">
+
+        </div>
+      </div>
+      <div class="slider disableSelection" id="nosotrosS">
+        <div id="cBtnImgNosotros1">
+          <button class="btn" id="btnImgNosotros1">
+            <img src="img/symbol/left.svg" alt="rowLeft">
+          </button>
+        </div>
+        <div id="cBtnImgNosotros2">
+          <button class="btn" id="btnImgNosotros2">
+            <img src="img/symbol/right.svg" alt="rowRight">
+          </button>
+        </div>
+      </div>
+    </article>
+    <article id="regalos">
+      <div class="slider disableSelection" id="regalosS">
+        <div id="cBtnRegalos1">
+          <button class="btn" id="btnRegalos1">
+            <img src="img/symbol/left.svg" alt="rowLeft">
+          </button>
+        </div>
+        <div id="cBtnRegalos2">
+          <button class="btn" id="btnRegalos2">
+            <img src="img/symbol/right.svg" alt="rowRight">
+          </button>
+        </div>
+      </div>
+      <div class="imgTittle" id="bgRegalos">
+        <div id="imgTittleRegalos">
+
+        </div>
+      </div>
+    </article>
+
+    <article id="pollos">
+      <model-viewer id="hugMe"
+      bounds="tight" src="3d/hugMe.glb" 
+      ar ar-modes="webxr scene-viewer quick-look" 
+      camera-controls 
+      environment-image="neutral" 
+      poster="poster.webp" 
+      shadow-intensity="1" 
+      autoplay 
+      camera-target="-0.01m -0.05677m 0.1056m" 
+      min-camera-orbit="-13deg 76deg 4.725m" 
+      max-camera-orbit="-13deg 76deg auto" 
+      >
+      </model-viewer>
+      
+      <model-viewer id="pollo3d"
+      bounds="tight" 
+      src="3d/pollo.glb" 
+      ar ar-modes="scene-viewer webxr quick-look" 
+      camera-controls 
+      shadow-intensity="1" 
+      poster="poster.webp" 
+      environment-image="neutral" 
+      exposure="1" 
+      min-camera-orbit="auto auto 3.191m" min-field-of-view="47.42deg">
+      </model-viewer>
+
+      <model-viewer id="beso"
+      bounds="tight" 
+      src="3d/beso.glb" 
+      ar ar-modes="webxr scene-viewer quick-look" 
+      environment-image="neutral" 
+      poster="poster.webp" 
+      shadow-intensity="1" 
+      autoplay 
+      min-camera-orbit="18deg 91deg 5.171m" 
+      max-camera-orbit="18deg 91deg auto" 
+      camera-controls 
+      >
+      </model-viewer>
+
+      
+    </article>
+
+    <footer>
+      <button class="btn" id="btnPropuesta">
+        <model-viewer 
+        bounds="tight" 
+        src="3d/click.glb" 
+        ar ar-modes="webxr scene-viewer quick-look" 
+        camera-controls 
+        environment-image="neutral" 
+        poster="poster.webp" 
+        shadow-intensity="1" 
+        autoplay 
+        min-camera-orbit="1deg 93deg auto" 
+        max-camera-orbit="1deg 93deg auto">
+  
+        </model-viewer>
+        
+      </button>
+    </footer>
+  </main>
+  
   <script src="script.js"></script>
+  <script src="js/abasolute.js"></script>
+  <script src="js/sliders.js"></script>
+  <script src="js/login.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
 </html>
+
+
+
+
