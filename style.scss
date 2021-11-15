@@ -183,14 +183,38 @@ main {
   background: white;
   border-radius: 10px;
   padding: 5px;
-  
-  tittle {
-    font-size: 2rem;
-    font-family: 'Love Ya Like A Sister', cursive;
-    font-weight: bold;
+  #tittleFirstMessage{
+    width: 100%;
+    text-align: center;
+    tittle {
+      font-size: 2rem;
+      font-family: 'Love Ya Like A Sister', cursive;
+      font-weight: bold;
+    }
   }
-  p {
-    font-size: 1.1rem;
+  #biblia{
+    max-height: 90%;
+    overflow-y: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    p {
+      font-size: 1.5rem;
+      padding: 1rem 5rem;
+      padding-bottom: 0;
+    }
+    #pollosBiblia{
+      justify-content: space-around;
+      flex-direction: row;
+      width: 100%;
+
+
+      .polloBiblia{
+        width: 40%;
+        height: 20rem;
+      }
+
+    }
   }
 }
 #propuesta {
